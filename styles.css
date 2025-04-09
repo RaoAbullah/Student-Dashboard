@@ -1,0 +1,202 @@
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    transition: background 0.4s ease-in-out;
+    background: linear-gradient(120deg, #e0eafc, #cfdef3);
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #667eea, #bd7bff);
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background: white;
+    color: #667eea;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #f1f1f1;
+}
+
+/* Profile Section */
+.profile {
+    margin-top: 20px;
+}
+
+.profile-box {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+#profile-pic:hover {
+    transform: scale(1.1);
+}
+
+.upload-btn {
+    display: block;
+    margin-top: 10px;
+    background: #667eea;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-btn:hover {
+    background: #667eea;
+}
+
+#upload-photo {
+    display: none;
+}
+
+/* Dashboard Cards */
+.dashboard {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Study Reminder Input */
+#reminder-input {
+    width: 80%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#set-reminder {
+    margin-top: 10px;
+    background: #667eea;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+}
+
+#set-reminder:hover {
+    background: #667eea;
+}
+
+/* Delete Button */
+.delete-btn {
+    background: red;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: darkred;
+}
+
+
+/* Dark Mode */
+.dark-mode {
+    background: #222;
+    color: white;
+}
+
+.dark-mode header {
+    background: #111;
+}
+
+.dark-mode button {
+    background: #555;
+    color: white;
+}
+
+.dark-mode .profile-box, 
+.dark-mode .card {
+    background: rgba(50, 50, 50, 0.9);
+    color: white;
+}
+
+.dark-mode .upload-btn {
+    background: #777;
+}
+
+.dark-mode .upload-btn:hover {
+    background: #555;
+}
+
+.dark-mode .card h3 {
+    color: #ffffff;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background: #ccc;
+}
+
+.progress-slider {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.enroll-btn, .remove-btn {
+    margin-left: 10px;
+    background-color: #667eea;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enroll-btn:disabled {
+    background-color: gray;
+}
