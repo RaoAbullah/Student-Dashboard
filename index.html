@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Dashboard</h1>
+            <button id="theme-toggle"><i class="fas fa-moon"></i> Dark Mode</button>
+        </header>
+
+        <section class="profile">
+            <h2>Profile</h2>
+            <div class="profile-box">
+                <img id="profile-pic" src="profile.png" alt="Profile Picture">
+                <h3> RAO ABDULLAH NASIR </h3>
+                <label for="upload-photo" class="upload-btn">Change Photo</label>
+                <input type="file" id="upload-photo">
+            </div>
+        </section>
+
+        <section class="dashboard">
+            <div class="card" id="enrolled-courses">
+                <h3><i class="fas fa-book"></i> Enrolled Courses</h3>
+                <ul>
+                    <h4 style="color: blue;">Check The courses in which you are Enrolled</h4>
+                </ul>
+            </div>
+
+
+
+            <div class="card">
+                <h3><i class="fas fa-clock"></i> Upcoming Quizzes</h3>
+                <p>Next quiz: <b>28th April</b></p>
+            </div>
+
+            <div class="card">
+                <h3><i class="fas fa-bell"></i> Study Reminders</h3>
+                <p id="reminder-text">No reminder set.</p>
+                <input type="text" id="reminder-input" placeholder="Enter your reminder">
+                <button id="set-reminder">Set Reminder</button>
+                <button id="clear-reminder">Clear Reminder</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
